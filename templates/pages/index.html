@@ -1,0 +1,45 @@
+
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}For Pyari Ladki 💗{% endblock %}
+
+{% block content %}
+
+<p class="small-heading">Project Pyari Ladki 💗</p>
+
+<h1>Hey Beautiful <span>♡</span></h1>
+
+<p class="description">
+    I made something Timepass project for you.💌
+</p>
+
+<img src="{% static 'images/bestie.jpg' %}"
+     class="main-photo"
+     alt="Bestie photo">
+
+<h2>Tap These Buttons ✨</h2>
+
+<p class="description">What do you need today?</p>
+
+<div class="buttons">
+
+    <a href="{% url 'motivation' %}" class="btn">
+        ✨ Tap This For Motivation <span>→</span>
+    </a>
+
+    <a href="{% url 'fun' %}" class="btn">
+        😂 real motivation <span>→</span>
+    </a>
+
+    <a href="{% url 'message' %}" class="btn">
+        💌 Message From Anshu <span>→</span>
+    </a>
+
+</div>
+
+<p class="bottom-text">
+    You're one of a kind. Never forget that! ♡
+</p>
+
+{% endblock %}

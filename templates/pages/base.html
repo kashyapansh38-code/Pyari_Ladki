@@ -1,0 +1,36 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}For My Bestie ♡{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="top-heart">✦ ♡ ✦</div>
+
+            {% block content %}
+            {% endblock %}
+
+            <div class="footer">
+                Made with love by Anshu ♡
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

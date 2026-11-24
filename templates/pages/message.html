@@ -1,0 +1,44 @@
+
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}A Message From Anshu 💌{% endblock %}
+
+{% block content %}
+
+<p class="small-heading">Phools for my</p>
+
+<h1>Phools for my Beautifull 💌</h1>
+
+<h2>Dear Pyari Ladki,</h2>
+
+
+<div class="memory-gallery">
+
+    <img src="{% static 'images/memory.jpg' %}"
+         class="content-photo"
+         alt="Our memory 1">
+
+    <img src="{% static 'images/memory2.jpg' %}"
+         class="content-photo"
+         alt="Our memory 2">
+
+    <img src="{% static 'images/memory3.jpg' %}"
+         class="content-photo"
+         alt="Our memory 3">
+
+</div>
+
+<h2>Stay The Same! 🫶</h2>
+
+<p class="description">
+    Always keep smiling. You've got this!
+</p>
+
+<h1 class="signature">Anshu ♡</h1>
+
+<a href="{% url 'home' %}" class="back-btn">
+    ← Back To Home
+</a>
+
+{% endblock %}

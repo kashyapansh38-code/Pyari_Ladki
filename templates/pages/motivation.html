@@ -1,0 +1,33 @@
+
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}You Can Do It ✨{% endblock %}
+
+{% block content %}
+
+<p class="small-heading">A LITTLE REMINDER FOR YOU</p>
+
+<h1>Interview hai kal du motivation
+</h1>
+
+<p class="description">
+    
+</p>
+
+<img src="{% static 'images/motivation.jpg' %}"
+     class="content-photo"
+     alt="Motivation">
+<h2></h2>
+
+
+
+<p class="description">
+    Motivation chahiyeeeeee
+</p>
+
+<a href="{% url 'home' %}" class="back-btn">
+    ← Back To Home
+</a>
+
+{% endblock %}

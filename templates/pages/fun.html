@@ -1,0 +1,34 @@
+
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Fun Time 😂{% endblock %}
+
+{% block content %}
+
+<p class="small-heading"></p>
+
+<h1>Chill maro nikl jayega Interview</h1>
+
+<p class="description">
+    
+</p>
+
+<video autoplay muted loop playsinline class="content-video">
+    <source src="{% static 'videos/fun.mp4' %}" type="video/mp4">
+</video>
+
+<h2>♡</h2>
+
+
+
+<div class="fun-message">
+    Warning! ⚠️<br>
+    Your smile is highly addictive! 😂
+</div>
+
+<a href="{% url 'home' %}" class="back-btn">
+    ← Back To Home
+</a>
+
+{% endblock %}
